@@ -70,7 +70,7 @@ client.on('message', message => {
 
   if (message.content === prefix + 'reboot') {
 
-	  if (message.author.id === "") {
+	  if (message.author.id === "545122607897378816") {
 		  message.channel.send('[BOT]Yenden başlatılıyor...').then(msg => {
 			  console.log('yeniden başlatılıyor')
 			  process.exit(0);
