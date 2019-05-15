@@ -7,6 +7,7 @@ var prefix = ayarlar.prefix;
 client.on('ready', () => {
   console.log(`[BOT] ${client.user.tag} ADI İLE GİRİŞ YAPTI!`);
 });
+
 client.on('message', msg => {
   if (msg.content === 'kızlar') {
     msg.reply('kızlarmı hihi');
@@ -69,7 +70,7 @@ client.on('message', message => {
 
   if (message.content === prefix + 'reboot') {
 
-	  if (message.author.id === "545122607897378816") {
+	  if (message.author.id === "") {
 		  message.channel.send('[BOT]Yenden başlatılıyor...').then(msg => {
 			  console.log('yeniden başlatılıyor')
 			  process.exit(0);
